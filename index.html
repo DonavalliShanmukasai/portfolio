@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shanmuka Sai Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body class="bg-gradient-futuristic font-inter text-white">
+    <div class="container">
+        <header class="sidebar-header">
+            <div class="rounded-image-wrapper">
+                <img src="images/profile.jpg" alt="About Me">
+            </div>
+            <h1 class="text-2xl sm:text-3xl font-bold text-shadow" style="font-family: 'Roboto Slab', serif;">
+                Shanmuka Sai
+            </h1>
+            
+            
+            
+
+            <nav>
+                <ul>
+                    <li><a href="#about" class="hover:text-blue-300 transition duration-300"><i
+                                class="fas fa-user mr-2"></i>About</a></li>
+                    <li><a href="#skills" class="hover:text-green-300 transition duration-300"><i
+                                class="fas fa-code mr-2"></i>Skills</a></li>
+                    <li><a href="#education" class="hover:text-orange-300 transition duration-300"><i
+                                class="fas fa-graduation-cap mr-2"></i>Education</a></li>
+                    <li><a href="#certifications" class="hover:text-purple-300 transition duration-300"><i
+                                class="fas fa-award mr-2"></i>Certifications</a></li>
+                    <li><a href="#projects" class="hover:text-yellow-300 transition duration-300"><i
+                                class="fas fa-project-diagram mr-2"></i>Projects</a></li>
+                    <li><a href="#interests" class="hover:text-pink-300 transition duration-300"><i
+                                class="fas fa-heart mr-2"></i>Interests</a></li>
+                    <li><a href="#contact" class="hover:text-indigo-300 transition duration-300"><i
+                                class="fas fa-envelope mr-2"></i>Contact</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                Designed by
+                <a href="https://www.jayanth.xyz" target="_blank" rel="noopener noreferrer" class="footer-text">
+                    Donavalli Jayanth
+                </a>
+            </div>
+
+        </header>
+
+        <main class="content-area">
+            <button id="hamburger-btn" class="md:hidden">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+            <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-full bg-gray-900/90 z-50">
+                <div class="bg-gray-800 w-80 h-full absolute right-0 p-6">
+                    <div class="flex justify-end mb-4">
+                        <button id="close-menu-btn"
+                            class="text-gray-300 hover:text-white focus:outline-none focus:shadow-outline">
+                            <i class="fas fa-times text-xl"></i>
+                        </button>
+                    </div>
+                    <nav class="block">
+                        <ul class="space-y-4">
+                            <li><a href="#about"
+                                    class="block text-lg text-gray-300 hover:text-blue-300 transition duration-300"><i
+                                        class="fas fa-user mr-2"></i>About</a></li>
+                            <li><a href="#skills"
+                                    class="block text-lg text-gray-300 hover:text-green-300 transition duration-300"><i
+                                        class="fas fa-code mr-2"></i>Skills</a></li>
+                            <li><a href="#education" class="hover:text-orange-300 transition duration-300"><i
+                                        class="fas fa-graduation-cap mr-2"></i>Education</a></li>
+                            <li><a href="#certifications"
+                                    class="block text-lg text-gray-300 hover:text-purple-300 transition duration-300"><i
+                                        class="fas fa-award mr-2"></i>Certifications</a></li>
+                            <li><a href="#projects"
+                                    class="block text-lg text-gray-300 hover:text-yellow-300 transition duration-300"><i
+                                        class="fas fa-project-diagram mr-2"></i>Projects</a></li>
+                            <li><a href="#interests"
+                                    class="block text-lg text-gray-300 hover:text-pink-300 transition duration-300"><i
+                                        class="fas fa-heart mr-2"></i>Interests</a></li>
+                            <li><a href="#contact"
+                                    class="block text-lg text-gray-300 hover:text-indigo-300 transition duration-300"><i
+                                        class="fas fa-envelope mr-2"></i>Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Inside the <section id="about"> -->
+            <section id="about" class="mt-8 mb-8">
+                <div class="glassmorphism rounded-lg shadow-lg-glow p-3 md:p-4 border-glow">
+                    <!-- Add the image wrapper for small screens -->
+                    <div class="about-image-wrapper">
+                        <img src="images/profile.jpg" alt="About Me Image"
+                            onerror="this.src='https://placehold.co/400x400/000/fff?text=About+Me&font=Montserrat'">
+                    </div>
+                    <div class="w-full">
+                        <h2 class="text-3xl font-semibold mb-1 text-blue-400">About Me</h2>
+                        <h3 class="text-xl font-semibold mb-1 text-gray-350"
+                            style="font-family: 'Times New Roman', Times, serif;">
+                            Donavalli Shanmuka Sai
+                        </h3>
+
+                        <p class="text-gray-300 leading-tight mb-2">
+                            Enthusiastic and adaptable Electronics and Communication Engineering graduate with knowledge
+                            in Python, C, and proficiency in tools like Packet Tracer, Keil uVision, KiCad, and
+                            Anaconda. Well-versed in utilizing Anaconda for deep learning workflows. Experienced in web
+                            development using Django, and computer vision with OpenCV. Skilled in addressing engineering
+                            challenges through critical thinking and problem-solving, with a growing interest in
+                            cybersecurity. Strong communicator and team player, known for empathic intelligence,
+                            adaptability, and effective collaboration. Effective in time management and a commitment to
+                            continuous learning.
+                        </p>
+
+                        <!-- Contact Details -->
+                        <div class="mt-4 text-gray-300">
+                            <p><strong>Name:</strong> Donavalli Shanmuka Sai</p>
+                            <p><strong>Email:</strong> <a href="mailto:donavallishanmukasai@gmail.com"
+                                    class="text-blue-400 hover:underline">donavallishanmukasai@gmail.com</a></p>
+                            <p><strong>Phone:</strong> <a href="tel:+91 9676835867 | "
+                                    class="text-blue-400 hover:underline">+91 9676835867 </a></p>
+                        </div>
+
+                        <button
+                            class="button-animation bg-blue-500 hover:bg-blue-600 text-white font-semibold py-1.5 px-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition duration-300 flex items-center gap-2 mt-3">
+                            <i class="fa fa-download"></i>
+                            <a href="images/Resume.pdf" download>Resume</a>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="mb-16">
+                <div class="glassmorphism rounded-lg shadow-lg-glow p-6 md:p-10 border-glow">
+                    <h2 class="text-3xl font-semibold mb-6 text-green-400">Skills</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                        <div class="bg-black/50 rounded-lg p-4 border border-gray-700">
+                            <h3 class="text-lg font-semibold text-white">Programming Languages</h3>
+                            <ul class="list-disc list-inside text-gray-300">
+                                <li>C</li>
+                                <li>Python</li>
+
+                            </ul>
+                        </div>
+
+                        <div class="bg-black/50 rounded-lg p-4 border border-gray-700">
+                            <h3 class="text-lg font-semibold text-white">Databases & Tools</h3>
+                            <ul class="list-disc list-inside text-gray-300">
+                                <li>Packet Tracer</li>
+                                <li>Kell uvision</li>
+                                <li>Anaconda</li>
+                                <li>KiCad</li>
+
+                            </ul>
+                        </div>
+
+                        <div class="bg-black/50 rounded-lg p-4 border border-gray-700">
+                            <h3 class="text-lg font-semibold text-white">Other Skills</h3>
+                            <ul class="list-disc list-inside text-gray-300">
+                                <li>Open CV</li>
+                                <li>Django</li>
+                                <li>Deep Learning</li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- New Education Section with Timeline Design -->
+            <section id="education" class="mb-16">
+                <div class="glassmorphism rounded-lg shadow-lg-glow p-6 md:p-10 border-glow">
+                    <h2 class="text-3xl font-semibold mb-8 text-orange-400 text-center">Education</h2>
+                    <div class="relative timeline-wrapper">
+                        <!-- Vertical Timeline Line -->
+                        <div
+                            class="absolute w-1 bg-orange-400/50 left-1/2 transform -translate-x-1/2 h-full timeline-line">
+                        </div>
+
+                        <!-- Timeline Entry 1 (Right Side) -->
+                        <div class="timeline-entry mb-8 flex items-center animate-on-scroll">
+                            <div class="timeline-half pr-8 text-right">
+                                <div class="bg-black/50 rounded-lg p-4 border border-gray-700 timeline-card">
+                                    <h3 class="text-lg font-semibold text-white">Bachelor of Engineering </h3>
+                                    <p class="text-orange-300 italic engineering-branch ">RAJALAKSHMI INSTITUTE OF
+                                        TECHNOLOGY</p>
+                                    <p class="text-gray-400">Electronics and Communication Engineering</p>
+                                    <p class="text-gray-400"><span class="font-bold cgpa">CGPA: 7.86/10</span></p>
+                                    <p class="text-sm text-gray-500 mt-2">2020 - 2024</p>
+                                </div>
+                            </div>
+                            <div class="timeline-half pl-8">
+                                <!-- Empty space on the left -->
+                            </div>
+                            <div
+                                class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-orange-400 rounded-full border-4 border-gray-800 timeline-marker">
+                            </div>
+                        </div>
+
+                        <!-- Timeline Entry 2 (Left Side) -->
+                        <div class="timeline-entry mb-8 flex items-center animate-on-scroll">
+                            <div class="timeline-half pr-8">
+                                <!-- Empty space on the right -->
+                            </div>
+                            <div class="timeline-half pl-8">
+                                <div class="bg-black/50 rounded-lg p-4 border border-gray-700 timeline-card">
+                                    <h3 class="text-lg font-semibold text-white">Intermediate</h3>
+                                    <p class="text-orange-300 italic engineering-branch">NARAYANA JR COLLEGE</p>
+
+                                    <p class="text-gray-400"><span class="font-bold cgpa">CGPA: 8.29/10</span></p>
+                                    <p class="text-sm text-gray-500 mt-2">2016 - 2018</p>
+                                </div>
+                            </div>
+                            <div
+                                class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-orange-400 rounded-full border-4 border-gray-800 timeline-marker">
+                            </div>
+                        </div>
+
+                        <!-- Timeline Entry 3 (Right Side) -->
+                        <div class="timeline-entry mb-8 flex items-center animate-on-scroll">
+                            <div class="timeline-half pr-8 text-right">
+                                <div class="bg-black/50 rounded-lg p-4 border border-gray-700 timeline-card">
+                                    <h3 class="text-lg font-semibold text-white">High School</h3>
+                                    <p class="text-orange-300 italic engineering-branch ">Sri Chaitanya EM High School</p>
+                                    
+                                    <p class="text-gray-400"><span class="font-bold cgpa">CGPA: 9.5/10</span></p>
+                                    <p class="text-sm text-gray-500 mt-2">2017 - 2018</p>
+                                </div>
+                            </div>
+                            <div class="timeline-half pl-8">
+                                <!-- Empty space on the left -->
+                            </div>
+                            <div
+                                class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-orange-400 rounded-full border-4 border-gray-800 timeline-marker">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="certifications" class="mb-16">
+                <div class="glassmorphism rounded-lg shadow-lg-glow p-6 md:p-10 border-glow">
+                    <h2 class="text-3xl font-semibold mb-6 text-purple-400">Certifications</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="bg-black/50 rounded-lg p-4 border border-gray-700">
+                            <h3 class="text-lg font-semibold text-white">Internship in Industrial Automation</h3>
+                            <p class="text-gray-400">RoboWorks Automation</p>
+                            <p class="text-sm text-gray-500 mt-2">Issued: 30th October 2024</p>
+                        </div>
+                        <div class="bg-black/50 rounded-lg p-4 border border-gray-700">
+                            <h3 class="text-lg font-semibold text-white">International Conference on ICRTICPT</h3>
+                            <p class="text-gray-400">AI in Wireless Communication</p>
+                            <p class="text-sm text-gray-500 mt-2">Issued: 13th May, 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="mb-16">
+                <div class="glassmorphism rounded-lg shadow-lg-glow p-6 md:p-10 border-glow">
+                    <h2 class="text-3xl font-semibold mb-6 text-yellow-400">Projects</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-black/50 rounded-lg p-4 border border-gray-700">
+                            <h3 class="text-lg font-semibold text-white">Detection of Meat Quality using Deep Learning
+                            </h3>
+                            <img src="images/meat.png" alt="Project Phoenix" class="rounded-md mt-4 w-full"
+                                onerror="this.src='https://placehold.co/400x300/000/fff?text=Phoenix&font=Montserrat'">
+                            <p class="text-gray-300 mt-2">
+                                Developed a deep learning model for detecting meat quality based on image analysis using
+                                OpenCV and deep learning techniques. The model classifies meat freshness and quality
+                                based on visual cues.
+                            </p>
+                            <p class="text-sm text-gray-400 mt-2">Tech: Python, TensorFlow/Keras, OpenCV, Deep Learning,
+                                Image Processing</p>
+                        </div>
+                        <div class="bg-black/50 rounded-lg p-4 border border-gray-700">
+                            <h3 class="text-lg font-semibold text-white">Object Detection using OpenCV</h3>
+                            <img src="images/object.png" alt="Project Nova" class="rounded-md mt-4 w-full"
+                                onerror="this.src='https://placehold.co/400x300/000/fff?text=Nova&font=Montserrat'">
+                            <p class="text-gray-300">
+                                Implemented an object detection system using OpenCV to recognize and track objects in
+                                images and video streams, utilizing feature extraction and computer vision techniques.
+                            </p>
+                            <p class="text-sm text-gray-400 mt-2">Tech: Python, OpenCV, Computer Vision, Machine
+                                Learning</p>
+                        </div>
+                        <div class="bg-black/50 rounded-lg p-4 border border-gray-700">
+                            <h3 class="text-lg font-semibold text-white">House Price Prediction using Linear Regression
+                            </h3>
+                            <img src="images/house.png" alt="Project Zenith" class="rounded-md mt-4 w-full"
+                                onerror="this.src='https://placehold.co/400x300/000/fff?text=Zenith&font=Montserrat'">
+                            <p class="text-gray-300">
+                                Developed a predictive model using linear regression to estimate house prices based on
+                                various factors such as location, size, and amenities, using historical data.
+                            </p>
+                            <p class="text-sm text-gray-400 mt-2">Tech: Python, Pandas, NumPy, Scikit-Learn, Data
+                                Analysis, Machine Learning</p>
+                        </div>
+
+                        <div class="bg-black/50 rounded-lg p-4 border border-gray-700">
+                            <h3 class="text-lg font-semibold text-white">Winding Factor Calculator</h3>
+                            <img src="images/winding.png" alt="Project Zenith" class="rounded-md mt-4 w-full"
+                                onerror="this.src='https://placehold.co/400x300/000/fff?text=Zenith&font=Montserrat'">
+                            <p class="text-gray-300">
+                                Created a computational tool to calculate the winding factor for electrical machines,
+                                helping optimize motor and transformer designs by evaluating winding arrangements.
+                            </p>
+                            <p class="text-sm text-gray-400 mt-2">Tech: Python, Electrical Engineering, Mathematical
+                                Calculations</p>
+                        </div>
+
+                        <div class="bg-black/50 rounded-lg p-4 border border-gray-700">
+                            <h3 class="text-lg font-semibold text-white">Energy Meter Readings Storage Application</h3>
+                            <img src="images/readings.png" alt="Project Zenith" class="rounded-md mt-4 w-full"
+                                onerror="this.src='https://placehold.co/400x300/000/fff?text=Zenith&font=Montserrat'">
+                            <p class="text-gray-300">
+                                Designed and developed a user interface for an application to store and track energy
+                                meter readings for JBM Ogihara Automotive India Limited, improving data management and
+                                monitoring.
+                            </p>
+                            <p class="text-sm text-gray-400 mt-2">Tech: UI Design, Database Management, C#</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="interests" class="mb-16">
+                <div class="glassmorphism rounded-lg shadow-lg-glow p-6 md:p-10 border-glow">
+                    <h2 class="text-3xl font-semibold mb-6 text-pink-400">Interests</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                        <div class="bg-black/50 rounded-lg p-4 border border-gray-700">
+                            <h3 class="text-lg font-semibold text-white">DIY Projects 🛠️⚙️</h3>
+                        </div>
+                        <div class="bg-black/50 rounded-lg p-4 border border-gray-700">
+                            <h3 class="text-lg font-semibold text-white">Gaming 🎮🕹️</h3>
+                        </div>
+                        <div class="bg-black/50 rounded-lg p-4 border border-gray-700">
+                            <h3 class="text-lg font-semibold text-white">Astrophotography 🌌📷</h3>
+                        </div>
+                        <div class="bg-black/50 rounded-lg p-4 border border-gray-700">
+                            <h3 class="text-lg font-semibold text-white">Cybersecurity 🔒💻 </h3>
+                        </div>
+                        <div class="bg-black/50 rounded-lg p-4 border border-gray-700">
+                            <h3 class="text-lg font-semibold text-white">Robotics & AI 🤖🚀</h3>
+                        </div>
+                        <div class="bg-black/50 rounded-lg p-4 border border-gray-700">
+                            <h3 class="text-lg font-semibold text-white">Drone Technology & FPV Racing 🚁🎥</h3>
+                        </div>
+                        <div class="bg-black/50 rounded-lg p-4 border border-gray-700">
+                            <h3 class="text-lg font-semibold text-white">Automobile Tech & EV Innovations 🚗</h3>
+                        </div>
+                        <div class="bg-black/50 rounded-lg p-4 border border-gray-700">
+                            <h3 class="text-lg font-semibold text-white">Virtual Reality & Augmented Reality 🥽</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="mb-16">
+                <div class="glassmorphism rounded-lg shadow-lg-glow p-6 md:p-10 border-glow">
+                    <h2 class="text-3xl font-semibold mb-6 text-indigo-400">Contact Me</h2>
+                    <form id="contact-form" action="https://getform.io/f/ajjmqrka" method="POST"
+                        class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-200">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required
+                                class="mt-1 px-4 py-2 w-full rounded-md bg-black/50 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-200">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required
+                                class="mt-1 px-4 py-2 w-full rounded-md bg-black/50 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-200">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Your Message" required
+                                class="mt-1 px-4 py-2 w-full rounded-md bg-black/50 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="button-animation bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2.5 px-5 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+
+                    <!-- Response Messages -->
+                    <div id="error-message" class="error-message" style="display: none; color: red; 
+                        border: 2px solid crimson; padding: 10px; border-radius: 8px; background-color: #ffe6e6; 
+                        font-weight: bold; box-shadow: 0 0 10px rgba(220, 20, 60, 0.5);">
+                        "We tried, we really did. But the internet had other plans. 😬"
+                    </div>
+
+                    <div id="response-message" class="sent-message" style="display: none; color: green; 
+                        border: 2px solid gold; padding: 10px; border-radius: 8px; background-color: #fff8dc;">
+                        "Congratulations! Your message is now on a thrilling adventure through the internet. 🌍✨"
+                    </div>
+                </div>
+            </section>
+
+            <script>
+                document.getElementById("contact-form").addEventListener("submit", function (event) {
+                    event.preventDefault(); // Prevent default form submission
+
+                    let formData = new FormData(this);
+                    console.log("Submitting form...");
+
+                    fetch("https://getform.io/f/ajjmqrka", { // Replace with your GetForm link
+                        method: "POST",
+                        body: formData
+                    })
+                        .then(response => {
+                            console.log("Response received:", response);
+                            if (!response.ok) throw new Error("Network response was not ok");
+                            return response.text();
+                        })
+                        .then(data => {
+                            console.log("Form submitted successfully!");
+                            document.getElementById("response-message").style.display = "block";
+                            document.getElementById("error-message").style.display = "none";
+                            document.getElementById("contact-form").reset();
+
+                            setTimeout(() => {
+                                document.getElementById("response-message").style.display = "none";
+                            }, 5000);
+                        })
+                        .catch(error => {
+                            console.error("Error submitting form:", error);
+                            document.getElementById("error-message").style.display = "block";
+                        });
+                });
+            </script>
+
+
+            <footer
+                class="bg-gradient-futuristic/90 backdrop-filter-blur-md py-6 px-4 border-t border-gray-700 rounded-t-lg shadow-lg-glow">
+                <div class="flex justify-center">
+                    <div class="flex space-x-4">
+                        <a href="https://x.com/SaiDonavalli"
+                            class="text-gray-300 hover:text-blue-400 transition duration-300"><i
+                                class="fab fa-twitter text-xl"></i></a>
+                        <a href="https://www.linkedin.com/in/donavalli-shanmuka-sai/"
+                            class="text-gray-300 hover:text-indigo-400 transition duration-300"><i
+                                class="fab fa-linkedin text-xl"></i></a>
+                        <a href="https://www.instagram.com/_shanmuka.sai_/"
+                            class="text-gray-300 hover:text-pink-400 transition duration-300"><i
+                                class="fab fa-instagram text-xl"></i></a>
+                        <a href="https://github.com/DonavalliShanmukasai"
+                            class="text-gray-300 hover:text-green-400 transition duration-300"><i
+                                class="fab fa-github text-xl"></i></a>
+                    </div>
+                </div>
+            </footer>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
