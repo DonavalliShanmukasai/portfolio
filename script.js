@@ -67,3 +67,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+function openModal(imageSrc) {
+    document.getElementById('certificateImage').src = imageSrc;
+    document.getElementById('certificateModal').classList.remove('hidden');
+}
+
+function closeModal() {
+    document.getElementById('certificateModal').classList.add('hidden');
+}
+
+// Close modal when clicking outside of it
+document.addEventListener("click", function(event) {
+    const modal = document.getElementById("certificateModal");
+    if (!modal.contains(event.target) && !event.target.matches("button")) {
+        closeModal();
+    }
+});
